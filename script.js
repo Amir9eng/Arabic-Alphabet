@@ -4,7 +4,7 @@ alphabetsEl.forEach(alphabet =>{
       let key=e.target.dataset.alphabet
       const audio= document.querySelector(`audio[data-alphabet="${key}"]`);
       audio.play();
-      
+      if(!key) return;
          
     })
 })
